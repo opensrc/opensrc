@@ -1,3 +1,6 @@
+opensrc.config
+opensrc.includes
+
 # C++ objects and libs
 
 *.slo

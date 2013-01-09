@@ -1,4 +1,4 @@
-opensrc
+OpenSRC
 =======
 
-The main website
+The main HTML5 website framework.

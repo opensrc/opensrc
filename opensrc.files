@@ -1,6 +1,10 @@
+.gitignore
 favicon.ico
 index.html
 opensrc.creator
 opensrc.files
 README.md
 lib/svg/lookright3.svg
+lib/css/index.css
+lib/js/index.js
+lib/js/marked.js
