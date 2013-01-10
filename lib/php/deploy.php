@@ -1,7 +1,7 @@
 <?php
 // based on https://gist.github.com/1809044
 
-error_log(var_export($_SERVER, true));
+//error_log(var_export($_SERVER, true));
 error_log(var_export($_REQUEST, true));
 
 define("MYIP", '101.167.17.51');
