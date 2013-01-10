@@ -11,6 +11,7 @@ define("MYIP", "101.167.17.51");
 if ($_SERVER['REMOTE_ADDR'] !== MYIP and
     $_SERVER['REMOTE_ADDR'] !== '127.0.0.1' and
     $_SERVER['REMOTE_ADDR'] !== '207.97.227.253' and
+    $_SERVER['REMOTE_ADDR'] !== '50.57.231.61' and
     $_SERVER['REMOTE_ADDR'] !== '50.57.128.197' and
     $_SERVER['REMOTE_ADDR'] !== '108.171.174.178') {
   error_log($_SERVER['REMOTE_ADDR']." is NOT authorized to access deploy.php");
