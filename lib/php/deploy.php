@@ -30,15 +30,21 @@ if ($_SERVER['REMOTE_ADDR'] != MYIP or
 
 // Run the commands for output
   $output = '';
-  foreach($commands AS $command){
+  foreach($commands as $command) {
 // Run it
     $tmp = shell_exec($command);
 // Output
+
+  if ($_SERVER['REMOTE_ADDR'] != MYIP or
+      $_SERVER['REMOTE_ADDR'] != '127.0.0.1') {
     $output .= '
 <span style="color: #6BE234;">$</span> <span style="color: #729FCF;">'.$command.'</span>
 '.htmlentities(trim($tmp));
+    }
   }
 
+if ($_SERVER['REMOTE_ADDR'] != MYIP or
+    $_SERVER['REMOTE_ADDR'] != '127.0.0.1') {
 echo '<!DOCTYPE HTML>
 <html lang="en-US">
   <head>
@@ -52,4 +58,5 @@ echo '<!DOCTYPE HTML>
   </body>
 </html>
 ';
+}
 ?>
