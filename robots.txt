@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /alsa
+Disallow: /lib
