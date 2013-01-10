@@ -25,11 +25,11 @@ $commands = array(
   'whoami',
   'git pull',
   'git status',
+  'git submodule sync',
+  'git submodule update',
+  'git submodule status',
 );
 
-//  'git submodule sync',
-//  'git submodule update',
-//  'git submodule status',
 
 $output = '';
 foreach($commands as $command) {
