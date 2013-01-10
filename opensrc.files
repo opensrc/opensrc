@@ -8,3 +8,4 @@ lib/svg/lookright3.svg
 lib/css/index.css
 lib/js/index.js
 lib/js/marked.js
+lib/php/deploy.php
