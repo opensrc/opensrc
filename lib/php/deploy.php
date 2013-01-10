@@ -4,7 +4,14 @@
 error_log(var_export($_SERVER, true));
 error_log(var_export($_REQUEST, true));
 
-if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1') {
+define("MYIP", '101.167.17.51');
+
+// deny access if not from MYIP, localhost or Github
+if ($_SERVER['REMOTE_ADDR'] != MYIP or
+    $_SERVER['REMOTE_ADDR'] != '127.0.0.1' or
+    $_SERVER['REMOTE_ADDR'] != '207.97.227.253' or
+    $_SERVER['REMOTE_ADDR'] != '50.57.128.197' or
+    $_SERVER['REMOTE_ADDR'] != '108.171.174.178') {
   error_log($_SERVER['REMOTE_ADDR']." is not authorized to access deploy.php");
   exit(1);
 }
