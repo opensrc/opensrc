@@ -120,7 +120,7 @@ footer a {
 }
 
 #top {
-  height: 3.3em;
+  height: 3.1em;
   left: 0;
   position: fixed;
   top: 0;
@@ -137,6 +137,7 @@ footer a {
   display: inline-block;
   float: left;
   line-height: 100%;
+  margin-left: 1em;
 }
 
 #logo img {
