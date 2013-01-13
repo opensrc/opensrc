@@ -1,3 +1,0 @@
-[submodule "alsa"]
-	path = alsa
-	url = git@github.com:opensrc/alsa.git
